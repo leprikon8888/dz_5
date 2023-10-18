@@ -7,13 +7,16 @@
  ***
 *****"""
 x = int(input('введи целое непарное число: '))
-y = x
-a = 1
-b = 1
-while x >= a:
-    print(x * '*')
-    x -= 2
+if x % 2:
+    y = x
+    a = 1
+    b = 1
+    while x >= a:
+        print(x * '*')
+        x -= 2
 
-while b < y:
-    print((b + 1) * '*')
-    b += 2
+    while b < y:
+        print((b + 1) * '*')
+        b += 2
+else:
+    print('введи непарное число')
